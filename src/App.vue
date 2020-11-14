@@ -1,26 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Home></Home>
+    <!-- <router-view></router-view> 这个组件和Home这类页面组件2选一写在这里-->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './pages/Home.vue'
 
 export default {
   name: 'app',
+  data(){
+    return{
+
+    }
+  },
   components: {
-    HelloWorld
-  }
+    Home
+  },
 }
 </script>
 
