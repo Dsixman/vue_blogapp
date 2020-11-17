@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <Home></Home>
-    <!-- <router-view></router-view> 这个组件和Home这类页面组件2选一写在这里-->
+    <router-view></router-view>
+    <div class="">
+      <footer>
+        <Bottom />
+      </footer>
+    </div>
   </div>
 </template>
 
 <script>
-import Home from './pages/Home.vue'
+//import Home from './component/Home.vue'
+//import Admin from './component/Addim.vue'
+import Bottom from './components/Bottom.vue'
+
 
 export default {
   name: 'app',
@@ -16,7 +23,8 @@ export default {
     }
   },
   components: {
-    Home
+
+    Bottom
   },
 }
 </script>
@@ -30,5 +38,6 @@ export default {
   color: #2c3e50;
   width:80%;
   margin:0 auto;
+
 }
 </style>

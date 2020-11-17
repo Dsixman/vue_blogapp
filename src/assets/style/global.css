@@ -1,6 +1,87 @@
+
 li{
   list-style: none
 }
 a{
   text-decoration: none
+}
+li, a, div, p{
+  color:black
+}
+.top{
+  background-color:black;
+  font-size: 1.5rem;
+  color:white;
+  height:60px;
+  line-height:60px
+}
+.logo{
+  color:white
+}
+.nav-title{
+
+}
+.nav-menu{
+  color:black;
+  background: black
+}
+.el-menu-item .nav-menu:hover{
+  background:#bbb
+}
+.nav-menu-item{
+}
+.el-menu--horizontal > .el-menu-item{
+  color:white
+}
+.pointer{
+  cursor:pointer;
+}
+.search-input-wrapper{
+  line-height:58px
+}
+.search-input-wrapper span.el-input__suffix-inner{
+  cursor:pointer;
+}
+.search-input-wrapper{
+  text-align:left
+}
+.search-input-wrapper .el-input{
+  width:90%
+}
+.radius-5pec{
+  border-radius: 5%
+}
+
+.el-menu.el-menu--horizontal{
+  border:0px
+}
+.logo{
+  line-height:60px;
+}
+
+/*Left*/
+.left{
+box-sizing: border-box;
+}
+.personal-files,.blog-login,.blog-date,.blog-tags,.blog-sorts{
+  margin:10px 0px 10px 10px;
+  border-radius: 4px;
+  background:white;
+  color:black
+}
+
+
+/*date 组件*/
+.blog-date .el-calendar__button-group{
+  display:none
+}
+.blog-date .el-calendar__title{
+  width:100%;
+  text-align:center
+}
+.blog-date .el-calendar-table .el-calendar-day{
+  height:35px;
+}
+.el-form-item__content{
+  margin-left:0px
 }

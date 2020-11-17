@@ -7,6 +7,14 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/',
+      name: 'home',
+      component: Home,
+      meta:{
+        "requireAuth": true
+      }
+    },
+    {
       path: '/home',
       name: 'home',
       component: Home,
@@ -14,5 +22,10 @@ export default new Router({
         "requireAuth": true
       }
     },
+    {
+      path:'/admin',
+      name:'admin',
+      component:() => import(/* webpackChunkName: "admin" */ '../pages/Admin.vue'),
+    }
   ]
 })
