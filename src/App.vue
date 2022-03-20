@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <div>asdf<div>
     <div class="">
       <footer>
         <Bottom />
